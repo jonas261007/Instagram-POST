@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Post</title>
+  <!-- Google Fonts and Font Awesome -->
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="center">
+    <div class="post">
+      <div class="head">
+        <div class="details">
+          <div class="image">
+            <img src="./images/avatar 3.png" alt="" />
+          </div>
+          <div class="name">Ana Maria</div>
+        </div>
+        <i class="fa-solid fa-ellipsis icon"></i>
+      </div>
+      <input type="checkbox" name="" id="like" class="btn" />
+      <input type="checkbox" name="" id="comment" class="btn" />
+      <input type="checkbox" name="" id="share" class="btn" />
+
+      <div class="content">
+        <img src="./images/post.jpg" alt="" />
+      </div>
+
+      <div class="features">
+        <div class="controls">
+          <label for="like" id="like-btn"></label>
+          <label for="comment" id="comment-btn"></label>
+          <label for="share" id="share-btn"></label>
+        </div>
+        <div class="liked">
+          <div class="images">
+            <img src="./images/avatar 2.png" alt="" />
+            <img src="./images/avatar 4.png" alt="" />
+            <img src="./images/avatar 5.png" alt="" />
+          </div>
+          <div class="desc">
+            Curtido por <span>alguém</span> e <span>30 outros</span>
+          </div>
+        </div>
+        <div class="desc title">
+          <span>Foto do meu namorado em Nova York</span> 😍😍😍😍
+        </div>
+        <label for="comment" id="comment-btn2">Visto por todos e 3 comentários</label>
+      </div>
+      <div class="post-comment">
+        <div class="head">
+          <div class="name">comentários</div>
+          <label for="comment" id="comment-btn3">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
+        
+        <div class="comments" id="comments-list">
+          <!-- Comentários serão adicionados aqui -->
+        </div>
+        
+        <div class="new-comment">
+          <img id="add-comment-avatar" src="./images/avatar 3.png" alt="Avatar do botão de adicionar comentário" />
+          <input type="text" id="comment-input" placeholder="Adicione um comentário..." />
+          <button id="add-comment-btn">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
